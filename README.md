@@ -3,8 +3,8 @@
 This is my implementation of a license plate recognition system using YOLO11 and OpenCV.
 
 
-![cover](results/cover.png)
-You can watch the video of the project here: https://www.youtube.com/watch?v=bgAUHS1Adzo
+![cover](results/demo.png)
+You can watch the video of the project here: https://youtube.com/shorts/U5-655aJCfs
 
 This project is split into three parts:
 
@@ -14,8 +14,8 @@ This project is split into three parts:
 
 ## Fine-tuning YOLO11 on a License Plate Dataset
 
-Fine-tuning YOLO11 is done in [License_Plate_Detection_YOLO11.ipynb](License_Plate_Detection_YOLO11.ipynb).
-Training took around 15 minutes on a google colab T4 GPU.
+Fine-tuning YOLO11 is done in [License_Plate_Detection_YOLO11.ipynb](License_Plate_Detection_YOLO11.ipynb)
+Training took around 15 minutes on a google colab T4 GPU. (Dataset size: ~400 images).
 
 The trained weights are available here: [yolo11_anpr_ghd.pt](yolo11_anpr_ghd.pt).
 
@@ -24,10 +24,10 @@ The trained weights are available here: [yolo11_anpr_ghd.pt](yolo11_anpr_ghd.pt)
 ## Extracting License Plate Digits from the License Plate Image
 
 There are much better algorithms for ALPR out there that remove this step and thus are more reliable. However, in this project I used basic OpenCV techniques to extract the license plate digits.
-
 You can find the notebook that descibes the process in [License_Plate_Digits_Extraction_OpenCV.ipynb](License_Plate_Digits_Extraction_OpenCV.ipynb) and the final function that extracts the digits is in [license_plate_extractor.py](license_plate_extractor.py).
 
-Here are the steps:
+### Steps
+
 1. Detecting the car in the image using YOLO11 with original weights.
     - I noticed that detecting the car first and then detcting the license plate was more accurate than detecting the license plate from the original bigger image.
 
