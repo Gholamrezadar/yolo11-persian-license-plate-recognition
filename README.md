@@ -4,6 +4,7 @@ This is my implementation of a license plate recognition system using YOLO11 and
 
 
 ![cover](results/demo.png)
+
 You can watch the video of the project here: https://youtube.com/shorts/U5-655aJCfs
 
 This project is split into three parts:
