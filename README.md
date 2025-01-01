@@ -63,7 +63,7 @@ After this step individual license plate digits are fed to the classifier for re
 
 ## Training a Classifier to Recognize the Extracted License Plate Digits
 
-Training the classifier is done in [License_plate_character_classifir.ipynb](License_plate_character_classifir.ipynb).
+Training the classifier is done in [License_plate_character_classifer.ipynb](License_plate_character_classifer.ipynb).
 
 - I didn't spend much time on this part as it was just a simple classification problem but this part can be improved A LOT.
 
