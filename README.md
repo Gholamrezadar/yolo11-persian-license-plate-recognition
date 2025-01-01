@@ -63,13 +63,13 @@ After this step individual license plate digits are fed to the classifier for re
 
 ## Training a Classifier to Recognize the Extracted License Plate Digits
 
-Training the classifier is done in [License_Plate_Recognition_YOLO11.ipynb](License_Plate_Recognition_YOLO11.ipynb).
+Training the classifier is done in [License_Plate_Recognition_YOLO11.ipynb](License_plate_character_classifier.ipynb).
 
 - I didn't spend much time on this part as it was just a simple classification problem but this part can be improved A LOT.
 
 The trained weights are available here: [persian_digit_classifier.pt](persian_digit_classifier.pt).
 
-You can try the whole pipleline in [License_Plate_Recognition_end_to_end.ipynb](License_Plate_Recognition_end_to_end.ipynb).
+You can try the whole pipleline in [License_Plate_Recognition_end_to_end.ipynb](license_Plate_Recognition_end_to_end.ipynb).
 
 ![YOLO11 Detection Results 10](results/recognition_result.png)
 
